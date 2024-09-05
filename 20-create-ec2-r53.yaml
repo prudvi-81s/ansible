@@ -9,6 +9,7 @@
     - mysql
     - backend
     - frontend
+    zone: paws81s.online
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
