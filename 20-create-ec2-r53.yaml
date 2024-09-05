@@ -4,7 +4,7 @@
   vars:
     subnet_id: "subnet-0c59ddddbedecc184"
     sg_id: "sg-037e0dede4ca57d54"
-    ami-id: "ami-09c813fb71547fc4f"
+    ami_id: "ami-09c813fb71547fc4f"
     instances:
     - mysql
     - backend
