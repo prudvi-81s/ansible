@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    subnet_id: subnet-049cfbff9f03cd0bd
+    subnet_id: "subnet-0c59ddddbedecc184"
     sg_id: "sg-037e0dede4ca57d54"
     ami-id: "ami-09c813fb71547fc4f"
     instances:
@@ -14,7 +14,7 @@
     amazon.aws.ec2_instance:
       name: "{{ item }}"
       vpc_subnet_id: "{{ subnet_id }}"
-      instance_type: "t2.micro"
+      instance_type: "t3.micro"
       security_group: "{{ sg_id }}"
       image_id: "{{ ami_id }}"
     loop: "{{ instances }}"
